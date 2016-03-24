@@ -13,8 +13,12 @@ public class StreamsDriver {
 
     public static void main(String[] args) {
         System.out.println("Driver Started");
+
         System.out.println("-------------------------Obtain Stream from List---------------------");
         list.stream().forEach(x -> System.out.println(x));
+
+        System.out.println("-------------------------Obtain Stream from List - Parallel---------------------");
+        list.parallelStream().forEach(x -> System.out.println(x));
 
         System.out.println("-------------------------Obtain Stream from Map using entrySet--------");
         map.entrySet().stream().forEach(x -> System.out.println(x));
