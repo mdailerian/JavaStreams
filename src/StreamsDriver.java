@@ -11,6 +11,7 @@ public class StreamsDriver {
     static Map<String, String> map = populateMap();
 
     public static void main(String[] args) {
+        System.out.println("Driver Started" );
         System.out.println("-------------------------Obtain Stream from List---------------------");
         list.stream().forEach(x->System.out.println(x));
         System.out.println("-------------------------Obtain Stream from Map using entrySet--------");
